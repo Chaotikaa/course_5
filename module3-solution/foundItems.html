@@ -1,13 +1,13 @@
-<table style="width:100%">
+<table class="table" style="width:100%">
   <tr ng-if="found && found.length != 0">
-    <th>Menu Item</th>
     <th>Short Name</th>
+    <th>Menu Item</th>
     <th>Description</th>
-    <th>Remove</th>
+    <th>Remove Item</th>
   </tr>
   <tr ng-repeat="item in found">
+    <th scope="row">{{item.short_name}}</th>
     <td>{{item.name}}</td>
-    <td>{{item.short_name}}</td>
     <td>{{item.description}}</td>
     <td>
     	<button class="btn" ng-click="onRemove({index: $index});">Remove
