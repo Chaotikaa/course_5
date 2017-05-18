@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Short Name</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="category in $ctrl.categories">
+      <th><a ui-sref="items({category:category.short_name})">{{category.id}}</a></th>
+      <td>{{category.short_name}}</td>
+      <td>{{category.name}}</td>
+      <!--<td>
+        <button class="btn btn-primary">View Items</button>
+      </td>-->
+    </tr>
+  </tbody>
+</table>

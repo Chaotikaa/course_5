@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <title>Module 4 Solution</title>
+</head>
+<body ng-app="MenuApp">
+
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <a class="navbar-brand" href="#">Module 4</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+         <a class="nav-link" href="#">GitHub<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    
+  </nav>
+
+<ui-view></ui-view>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+<script src="src/data.module.js"></script>
+<script src="src/menuapp.module.js"></script>
+
+<!-- MenuApp Module Artifacts -->
+<script src="src/routes.js"></script>
+<script src="src/categories.component.js"></script>
+<script src="src/items.component.js"></script>
+
+<script src="src/categories-state.controller.js"></script>
+<script src="src/items-state.controller.js"></script>
+
+<script src="src/menudata.service.js"></script>
+
+
+<!--<script src="src/routes.js"></script>-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in $ctrl.items">
+      <th>{{item.id}}</th>
+      <td>{{item.name}}</td>
+      <td>{{item.description}}</td>
+      <!--<td>
+        <button class="btn btn-primary">View Items</button>
+      </td>-->
+    </tr>
+  </tbody>
+</table>
